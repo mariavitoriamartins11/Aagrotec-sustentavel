@@ -1,1 +1,42 @@
 
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Consumo de Água</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Consumo de Água</h1>
+        <p>Insira o consumo médio diário em litros:</p>
+
+        <form id="waterForm">
+            <label for="banho">Banho (litros por banho):</label>
+            <input type="number" id="banho" required>
+
+            <label for="torneira">Torneira (litros por uso):</label>
+            <input type="number" id="torneira" required>
+
+            <label for="lava">Máquina de lavar (litros por lavagem):</label>
+            <input type="number" id="lava" required>
+
+            <label for="banhosDia">Número de banhos por dia:</label>
+            <input type="number" id="banhosDia" required>
+
+            <label for="torneirasDia">Número de usos da torneira por dia:</label>
+            <input type="number" id="torneirasDia" required>
+
+            <label for="lavagensDia">Número de lavagens por dia:</label>
+            <input type="number" id="lavagensDia" required>
+
+            <button type="submit">Calcular</button>
+        </form>
+
+        <div id="resultado"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
